@@ -1,0 +1,14 @@
+.header_container,
+.header_user_actions {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.header_container {
+    padding: 18px 0;
+}
+
+.header_user_actions a:first-child {
+    margin-right: 15px;
+}

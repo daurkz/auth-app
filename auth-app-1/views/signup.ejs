@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<%- include('./partials/head.ejs', {title: 'Sign Up'}) %>
+<body class="sign_page">
+    <div class="page sign_form">
+        <form 
+            class="signin_form" 
+            action="/api/signup" 
+            method="POST"
+        >
+            <span>Create Accaunt</span>
+            <%- include('./partials/input.ejs', {
+                type: 'email', 
+                placeholder: 'Enter your email', 
+                name: 'email'
+            }) %>
+            <%- include('./partials/input.ejs', {
+                type: 'text', 
+                placeholder: 'Enter your name', 
+                name: 'user_name'
+            }) %>
+            <%- include('./partials/input.ejs', {
+                type: 'password', 
+                placeholder: 'Enter password', 
+                name: 'password'
+            }) %>
+            <%- include('./partials/input.ejs', {
+                type: 'password', 
+                placeholder: 'Repeat password', 
+                name: 're_passwrd'
+            }) %>
+            <%- include('./partials/button.ejs', {
+                type: 'submit', 
+                title: 'Sign Up'
+            }) %>
+        </form>
+    </div>
+</body>
+</html>
