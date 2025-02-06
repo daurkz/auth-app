@@ -1,6 +1,7 @@
 .page {
-    max-width: 1440px;
-    margin: 0 auto;
+    background-color: #fff;
+    box-shadow: 0 3px 20px 0px rgba(0, 0, 0, 0.1);
+    height: 100vh;
 }
 
 .sign_page {
@@ -35,4 +36,8 @@
     font-size: 30px;
     color: #555555;
     
+}
+
+.signin_form > button:hover {
+    background-color: #212529;
 }

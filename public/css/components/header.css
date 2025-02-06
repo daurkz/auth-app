@@ -6,9 +6,36 @@
 }
 
 .header_container {
-    padding: 18px 0;
+    background-color: #212529; 
+}
+
+.header_left {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
 }
 
 .header_user_actions a:first-child {
     margin-right: 15px;
+}
+
+.header_logo {
+    margin-right: 100px;
+}
+
+.header_logo > a,
+.header_user_actions > a,
+.header_nav > a {
+    display: inline-block;
+    padding: 18px 15px;
+    color: #fff;
+
+    transition: all ease .3s;
+}
+
+
+.header_user_actions > a:hover,
+.header_nav > a:hover,
+.header_logo > a:hover {
+    background-color: #4272d7;
 }
